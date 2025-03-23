@@ -31,7 +31,7 @@ class bank{
 
     void printBlance(){
         for (Account account: accounts ) {
-            System.out.println();
+            System.out.println(account.viewBalance());
         }
     }
 }
@@ -83,7 +83,9 @@ public class Q4 {
     public static void main(String[] args) {
         bank bank1 = new bank();
         savingAccount sa = new savingAccount(1000);
+        bank1.addAccount(sa);
         bank1.deposit(sa,100);
         bank1.printBlance();
+
     }
 }

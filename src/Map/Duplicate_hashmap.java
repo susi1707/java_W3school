@@ -22,6 +22,7 @@ public class Duplicate_hashmap {
         }
         System.out.println(hm);
         Set<Map.Entry<Character, Integer>> set = hm.entrySet();
+        System.out.println(set);
         for (Map.Entry<Character, Integer> res: set ) {
             if(res.getValue()>1)
                 System.out.println(res.getKey());
